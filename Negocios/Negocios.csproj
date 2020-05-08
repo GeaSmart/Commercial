@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C21C5EF9-D6B8-4252-B40D-564431D563F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Negocios</RootNamespace>
+    <AssemblyName>Negocios</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\..\db2code 22-06-2018\Herramientas\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="balALMACEN.cs" />
+    <Compile Include="balAUDITORIA.cs" />
+    <Compile Include="balBONIFICACION.cs" />
+    <Compile Include="balCAMBIO.cs" />
+    <Compile Include="balCAMBIO_DETALLE.cs" />
+    <Compile Include="balCANAL.cs" />
+    <Compile Include="balCATEGORIA.cs" />
+    <Compile Include="balCHOFER.cs" />
+    <Compile Include="balCOMPRA.cs" />
+    <Compile Include="balCONDICION_PAGO.cs" />
+    <Compile Include="balDESCUENTO.cs" />
+    <Compile Include="balDESCUENTO_P.cs" />
+    <Compile Include="balDETALLE_COMPRA.cs" />
+    <Compile Include="balDETALLE_IMPUESTO.cs" />
+    <Compile Include="balDETALLE_LISTA_PRECIO.cs" />
+    <Compile Include="balDETALLE_NC.cs" />
+    <Compile Include="balDETALLE_PEDIDO.cs" />
+    <Compile Include="balDETALLE_PROG.cs" />
+    <Compile Include="balDETALLE_VENTA.cs" />
+    <Compile Include="balFORMATO.cs" />
+    <Compile Include="balIMPUESTO.cs" />
+    <Compile Include="balLINEA.cs" />
+    <Compile Include="balLISTA_PRECIO.cs" />
+    <Compile Include="balMARCA.cs" />
+    <Compile Include="balMETODO_PAGO.cs" />
+    <Compile Include="balMOTIVO_DEVOLUCION.cs" />
+    <Compile Include="balNOTA_CREDITO.cs" />
+    <Compile Include="balPAGO.cs" />
+    <Compile Include="balPAGO_COMPRA.cs" />
+    <Compile Include="balPEDIDO.cs" />
+    <Compile Include="balPERFIL.cs" />
+    <Compile Include="balPERFIL_REGLA.cs" />
+    <Compile Include="balPREFERENCIA.cs" />
+    <Compile Include="balPRODUCTO.cs" />
+    <Compile Include="balProgram.cs" />
+    <Compile Include="balPROGRAMACION.cs" />
+    <Compile Include="balREGLA.cs" />
+    <Compile Include="balRUTA.cs" />
+    <Compile Include="balSERIE.cs" />
+    <Compile Include="balSOCIO.cs" />
+    <Compile Include="balSTOCK.cs" />
+    <Compile Include="balTIPO_DOCUMENTO.cs" />
+    <Compile Include="balTIPO_NEGOCIO.cs" />
+    <Compile Include="balTIPO_VENTA.cs" />
+    <Compile Include="balUBIGEO.cs" />
+    <Compile Include="balUNIDAD_MEDIDA.cs" />
+    <Compile Include="balUSUARIO.cs" />
+    <Compile Include="balVEHICULO.cs" />
+    <Compile Include="balVENDEDOR.cs" />
+    <Compile Include="balVENTA.cs" />
+    <Compile Include="balVISITA.cs" />
+    <Compile Include="balZONA.cs" />
+    <Compile Include="CustomException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_balALMACEN.cs" />
+    <Compile Include="_balAUDITORIA.cs" />
+    <Compile Include="_balBONIFICACION.cs" />
+    <Compile Include="_balCAMBIO.cs" />
+    <Compile Include="_balCAMBIO_DETALLE.cs" />
+    <Compile Include="_balCATEGORIA.cs" />
+    <Compile Include="_balCHOFER.cs" />
+    <Compile Include="_balDETALLE_IMPUESTO.cs" />
+    <Compile Include="_balIMPUESTO.cs" />
+    <Compile Include="_balMETODO_PAGO.cs" />
+    <Compile Include="_balCOMPRA.cs" />
+    <Compile Include="_balCONDICION_PAGO.cs" />
+    <Compile Include="_balDESCUENTO.cs" />
+    <Compile Include="_balDESCUENTO_P.cs" />
+    <Compile Include="_balDETALLE_COMPRA.cs" />
+    <Compile Include="_balDETALLE_LISTA_PRECIO.cs" />
+    <Compile Include="_balDETALLE_NC.cs" />
+    <Compile Include="_balDETALLE_PEDIDO.cs" />
+    <Compile Include="_balDETALLE_PROG.cs" />
+    <Compile Include="_balDETALLE_VENTA.cs" />
+    <Compile Include="_balFORMATO.cs" />
+    <Compile Include="_balLINEA.cs" />
+    <Compile Include="_balLISTA_PRECIO.cs" />
+    <Compile Include="_balMARCA.cs" />
+    <Compile Include="_balMOTIVO_DEVOLUCION.cs" />
+    <Compile Include="_balNOTA_CREDITO.cs" />
+    <Compile Include="_balPAGO.cs" />
+    <Compile Include="_balPAGO_COMPRA.cs" />
+    <Compile Include="_balPEDIDO.cs" />
+    <Compile Include="_balPERFIL.cs" />
+    <Compile Include="_balPERFIL_REGLA.cs" />
+    <Compile Include="_balPREFERENCIA.cs" />
+    <Compile Include="_balPRODUCTO.cs" />
+    <Compile Include="_balPROGRAMACION.cs" />
+    <Compile Include="_balREGLA.cs" />
+    <Compile Include="_balRUTA.cs" />
+    <Compile Include="_balSERIE.cs" />
+    <Compile Include="_balSOCIO.cs" />
+    <Compile Include="_balSTOCK.cs" />
+    <Compile Include="_balTIPO_DOCUMENTO.cs" />
+    <Compile Include="_balTIPO_NEGOCIO.cs" />
+    <Compile Include="_balTIPO_VENTA.cs" />
+    <Compile Include="_balUBIGEO.cs" />
+    <Compile Include="_balUNIDAD_MEDIDA.cs" />
+    <Compile Include="_balUSUARIO.cs" />
+    <Compile Include="_balVEHICULO.cs" />
+    <Compile Include="_balVENDEDOR.cs" />
+    <Compile Include="_balVENTA.cs" />
+    <Compile Include="_balVISITA.cs" />
+    <Compile Include="_balZONA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{752931ce-cbc7-4c9c-899a-ebe59a13a991}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{bd01588d-1840-4bee-96a2-7fb1d89f28fc}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

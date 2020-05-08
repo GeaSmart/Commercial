@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD01588D-1840-4BEE-96A2-7FB1D89F28FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eALMACEN.cs" />
+    <Compile Include="eAUDITORIA.cs" />
+    <Compile Include="eBONIFICACION.cs" />
+    <Compile Include="eCAMBIO.cs" />
+    <Compile Include="eCAMBIO_DETALLE.cs" />
+    <Compile Include="eCANAL.cs" />
+    <Compile Include="eCATEGORIA.cs" />
+    <Compile Include="eCHOFER.cs" />
+    <Compile Include="eCOMPRA.cs" />
+    <Compile Include="eCONDICION_PAGO.cs" />
+    <Compile Include="eDESCUENTO.cs" />
+    <Compile Include="eDESCUENTO_P.cs" />
+    <Compile Include="eDETALLE_COMPRA.cs" />
+    <Compile Include="eDETALLE_IMPUESTO.cs" />
+    <Compile Include="eDETALLE_LISTA_PRECIO.cs" />
+    <Compile Include="eDETALLE_NC.cs" />
+    <Compile Include="eDETALLE_PEDIDO.cs" />
+    <Compile Include="eDETALLE_PROG.cs" />
+    <Compile Include="eDETALLE_VENTA.cs" />
+    <Compile Include="eFORMATO.cs" />
+    <Compile Include="eIMPUESTO.cs" />
+    <Compile Include="eLINEA.cs" />
+    <Compile Include="eLISTA_PRECIO.cs" />
+    <Compile Include="eMARCA.cs" />
+    <Compile Include="eMETODO_PAGO.cs" />
+    <Compile Include="eMOTIVO_DEVOLUCION.cs" />
+    <Compile Include="eNOTA_CREDITO.cs" />
+    <Compile Include="ePAGO.cs" />
+    <Compile Include="ePAGO_COMPRA.cs" />
+    <Compile Include="ePEDIDO.cs" />
+    <Compile Include="ePERFIL.cs" />
+    <Compile Include="ePERFIL_REGLA.cs" />
+    <Compile Include="ePREFERENCIA.cs" />
+    <Compile Include="ePRODUCTO.cs" />
+    <Compile Include="ePROGRAMACION.cs" />
+    <Compile Include="eREGLA.cs" />
+    <Compile Include="eRUTA.cs" />
+    <Compile Include="eSERIE.cs" />
+    <Compile Include="eSOCIO.cs" />
+    <Compile Include="eSTOCK.cs" />
+    <Compile Include="eTIPO_DOCUMENTO.cs" />
+    <Compile Include="eTIPO_NEGOCIO.cs" />
+    <Compile Include="eTIPO_VENTA.cs" />
+    <Compile Include="eUBIGEO.cs" />
+    <Compile Include="eUNIDAD_MEDIDA.cs" />
+    <Compile Include="eUSUARIO.cs" />
+    <Compile Include="eVEHICULO.cs" />
+    <Compile Include="eVENDEDOR.cs" />
+    <Compile Include="eVENTA.cs" />
+    <Compile Include="eVISITA.cs" />
+    <Compile Include="eZONA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
